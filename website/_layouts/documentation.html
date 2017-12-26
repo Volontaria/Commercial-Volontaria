@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="layout-documentation">
+  <nav class="left-nav">
+    <div class="left-nav__title">Documentation</div>
+    {% assign ordered_documentation = site.documentation | sort:"order_number" %}
+    <ul>
+    {% for documentation in ordered_documentation %}
+      <li>
+        <a href="{{ documentation.url | relative_url }}">{{ documentation.title | escape }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+  </nav>
+
+  <article class="post">
+
+    <h1 class="post__header">
+      {{ page.title | escape }}
+    </h1>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+  </article>
+</div>

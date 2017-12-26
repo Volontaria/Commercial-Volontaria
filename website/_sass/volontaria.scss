@@ -1,0 +1,47 @@
+/*****
+Import all basic file
+*****/
+@import "external/normalize/normalize.css";
+@import "external/fontAwesome4.7.0/css/font-awesome.css";
+@import "external/timeline.css";
+
+@import "volontaria/_fonts.scss";
+@import "volontaria/_easings.scss";
+@import "volontaria/_theme.scss";
+@import "volontaria/_site.scss";
+@import "volontaria/_layout.scss";
+
+/*****
+Import components
+
+example:
+@import "volontaria/components/_buttons.scss";
+*****/
+@import "volontaria/components/_button.scss";
+@import "volontaria/components/_card.scss";
+@import "volontaria/components/_table.scss";
+@import "volontaria/components/_nav.scss";
+@import "volontaria/components/_site-header.scss";
+@import "volontaria/components/_site-footer.scss";
+@import "volontaria/components/_page-content.scss";
+@import "volontaria/components/_columns.scss";
+@import "volontaria/components/_post.scss";
+@import "volontaria/components/_left-nav.scss";
+
+
+/*****
+Import pages
+
+example:
+@import "volontaria/pages/_home.scss";
+*****/
+@import "volontaria/pages/_home.scss";
+
+/*****
+Import layout
+
+example:
+@import "volontaria/layouts/_page.scss";
+*****/
+@import "volontaria/layouts/_page.scss";
+@import "volontaria/layouts/_documentation.scss";

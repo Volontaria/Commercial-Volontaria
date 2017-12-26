@@ -1,0 +1,29 @@
+.left-nav {
+    background-color: $main-color-light;
+    color: white;
+    min-width: 200px;
+    padding: 20px;
+
+    &__title {
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 30px;
+        border-bottom: 3px double white;
+        text-align: center;
+        padding: 5px;
+    }
+
+    & > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        & > li {
+            margin-top: 10px;
+
+            & > a {
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.site-footer {
+    color: white;
+    background-color: $main-color;
+    height: 290px;
+
+    font-size: 18px;
+
+    padding: 40px;
+
+    &__heading {
+        text-align: center;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__column {
+            width: 33.3%;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
