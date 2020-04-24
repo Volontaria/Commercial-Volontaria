@@ -1,185 +1,333 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
+
+    <!-- Basic -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
     <title>Volontaria</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-    <!--<![endif]-->
 
-    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/marketing.css">
-    <!--<![endif]-->
 </head>
-<body>
+<body id="page-top" class="politics_version">
 
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-4">
-              <a class="pure-menu-heading" href="">Volontaria</a>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-4" style="text-align: right;">
-                <a href="http://volontaria.readthedocs.io/" class="pure-button"><i class="fa fa-book"></i> Documentation</a>
-
-                <a href="https://github.com/Volontaria/" class="pure-button"><i class="fa fa-github"></i> Code source</a>
-            </div>
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>  
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img src="images/logo.png" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#home">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
+            </li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="#products">Produits</a>
+			</li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#pricing">Gratuit ?</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</div>
+      </div>
+    </nav>
+	
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
+		<div class="heading">
+			<h1>Bienvenue chez Volontaria</h1>
+			<h3 class="cd-headline clip is-full-width">
+				<span>Une communaute au service</span>
+				<span class="cd-words-wrapper">
+					<b class="is-visible">des volontaires</b>
+					<b>du logiciel libre</b>
+					<b>de l'ecologique</b>
+					<b>des initiatives sociales</b>
+				</span>
+				<div class="btn-ber">
+					<a class="get_btn hvr-bounce-to-top" href="https://volontaria.readthedocs.io/en/latest/">Demarrer maintenant</a>
+					<a class="learn_btn hvr-bounce-to-top" href="#about">En savoir plus</a>
+				</div>
+			</h3>
+		</div>
+	</section>
 
-<div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">Volontaria</h1>
-        <p class="splash-subhead">
-            Concentrez-vous sur le fait de changer le monde
-        </p>
-    </div>
-</div>
+    <div id="about" class="section lb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>Bienvenue chez vous</h2>
+                        <p>
+							Volontaria c'est avant tout une communauté, une communauté qui se plait a servir les
+							bénévoles de tout horizon et a facilité les initiatives de tout type, une communauté
+							compose majoritairement de développeur logiciel et de designeur, mais ouverte a tous
+							et a toutes.
+						</p>
+						<p>
+							Volontaria c'est aussi un système de gestion de bénévolat, en logiciel libre, pour vous
+							respecter vous-même et votre communauté, mais aussi gratuit, pour faciliter les
+							changements importants dans notre société.
+						</p>
+						<p>
+							Avec volontaria vous pouvez enfin motiver et organiser votre communauté et changer le
+							monde dans lequel vous évoluez.\
+						</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
 
-<div class="content-wrapper">
-    <div class="content">
-        <h2 class="content-head is-center">Gardez les choses simples</h2>
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/about_04.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
+	<div id="products" class="section wb">
+		<div class="container">
+			<div class="section-title text-center">
+				<h3>Qu'est ce que c'est que Volontaria ?</h3>
+				<p>Une solution de gestion des bénévoles</p>
+			</div><!-- end title -->
 
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Prise en main rapide
-                </h3>
-                <p>
-                    Volontaria offre des interfaces simples et une
-                    documentation complète afin de correspondre
-                    a tout les membres de votre équipe.
-                </p>
+			<div class="products">
+				<div class="product main">
+					<div class="product-content">
+						<p>
+							Volontaria est un outil imaginé, conçu et propulsé par une communauté de bénévole.
+							Il tire sa force de l'expérience de sa communauté ainsi que des longues analyses et
+							discussions faites par cette dernière pour s'adapter aux besoins et aux demandes de
+							tous ses utilisateurs.
+						</p>
+						<p>
+							En décidant de créer une instance Volontaria vous ne décidez pas simplement d'utiliser
+							un logiciel, vous décidez de faire confiance à toute la communauté qui le soutiens et
+							devenez vous-même contributeur de cette dernière.
+						</p>
+					</div>
+				</div>
+
+				<div class="product">
+					<div class="pic">
+						<i class="fa fa-desktop"></i>
+					</div>
+					<div class="product-content">
+						<h3 class="title">Plateforme internet</h3>
+						<span class="subtitle">Disponible sur tous les navigateurs</span>
+						<p>
+							Chaque instance Volontaria dispose d'une interface permettant a vos bénévoles de
+							s'inscrire a vos événements, mais aussi d'une interface d'administration simplifiée
+							pour aider vos collaborateurs a gérer les bénévoles et les événements de bénévolat.
+						</p>
+						<p>
+							L'interface simple et documentée vous permettra de facilement prendre de
+							bonne habitude dans la gestion de vos événements.
+						</p>
+					</div>
+				</div>
+
+				<div class="product">
+					<div class="pic">
+						<i class="fa fa-mobile"></i>
+					</div>
+					<div class="product-content">
+						<h3 class="title">Application mobile</h3>
+						<span class="subtitle">Android & iOS</span>
+						<p>
+							Toutes les instances volontaria sont compatibles avec l'application mobile Volontaria
+							disponible sur Android et iOS.
+						</p>
+						<p>
+							Il vous suffit de télécharger l'application mobile depuis le Play Store ou l'Apple Store
+							et d'utiliser le QR code qui s'affichera sur votre instance de Volontaria.
+
+						</p>
+						<div style="display: flex; justify-content: space-around;">
+							<a class="pricing_btn hvr-bounce-to-top" href="#">Play Store</a>
+							<a class="pricing_btn hvr-bounce-to-top" href="#">Apple Store</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Que pouvons nous faire pour vous ?</h3>
+                <p>Volontaria est une solution communautaire répondant a de nombreux besoins.</p>
+            </div><!-- end title -->
+
+            <div class="row">
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-seo"></i>
+						</div>
+						<h2>Gestion des bénévoles</h2>
+						<p>
+							Chaque bénévoles dispose de sa propre fiche contenant l'historique de ses inscriptions
+							et présences.
+						</p>
+					</div>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-development"></i>
+						</div>
+						<h2>Type de tache</h2>
+						<p>
+							Créez des types de taches et assignez-les à chacun de vos événements pour aider
+							les bénévoles à s'investir.
+						</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-process"></i>
+						</div>
+						<h2>Suivi des présences</h2>
+						<p>
+							Faites le suivi des présences afin de mieux prévoir vos futurs événements
+							et augmenter vos chances de succès.
+						</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-discuss-issue"></i>
+						</div>
+						<h2>Lieux de bénévolat</h2>
+						<p>
+							Définissez plusieurs lieux de bénévolat et aidez les bénévoles à trouver des
+							actions près de chez eux.
+						</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea"></i>
+						</div>
+						<h2>Export des participations</h2>
+						<p>
+							Profiter des outils d'export pour intégrer facilement vos systèmes de rabais
+							ou de remerciement aux participants.
+						</p>
+					</div>
+                </div><!-- end col -->
+				<div class="col-md-4">
+                    <div class="services-inner-box">
+						<div class="ser-icon">
+							<i class="flaticon-idea-1"></i>
+						</div>
+						<h2>Documentation</h2>
+						<p>
+							Intégrer votre propre documentation aux bénévoles pour aider vos participants à
+							connaitre vos pratiques internes.
+						</p>
+					</div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<div id="pricing" class="section wb">
+		<div class="container">
+			<div class="section-title text-center">
+                <h3>C'est gratuit!</h3>
+                <p>Car pour nous Liberté rime avec Qualité, mais aussi avec Gratuité.</p>
+            </div><!-- end title -->
+			
+			<div class="row justify-content-center">
+				<a class="pricing_btn hvr-bounce-to-top" href="https://volontaria.readthedocs.io/en/latest/">Démarrer maintenant</a>
             </div>
-            <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                <h3 class="content-subhead">
-                    <i class="fa fa-th-large"></i>
-                    Solution modulaire
-                </h3>
-                <p>
-                    Chaque organisation ce fixe des objectifs différents,
-                    Volontaria vous laisse donc choisir les modules dont
-                    vous avez vraiment besoin.
-                </p>
+			
+		</div>
+	</div>
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+				<a href="#"><img src="images/logo.png" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-links">
+                        <a href="https://github.com/volontaria/">Github</a>
+                        <a href="https://volontaria.readthedocs.io/en/latest/">Documentation</a>
+                        <a href="https://join.slack.com/t/volontaria/shared_invite/zt-3gw9y82d-747hLCjKbU~jWrt8VLCRIQ">Slack</a>
+                    </p>
+					<p class="footer-company-name">
+						<a href="#">Volontaria</a> est un logiciel libre sous licence AGPLv3
+					</p>
+					<p class="footer-company-name">
+						Design By : <a href="https://html.design/">html design</a>
+					</p>
+                </div>
             </div>
-            <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                <h3 class="content-subhead">
-                    <i class="fa fa-users"></i>
-                    Vision communautaire
-                </h3>
-                <p>
-                    Profiter de l'aide de notre équipe de
-                    développement, mais aussi des associations
-                    qui utilisent déjà Volontaria.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img width="300" alt="File Icons" class="pure-img-responsive" src="img/common/multi-devices.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
 
-            <h2 class="content-head content-head-ribbon">Toujours là où vous en avez besoin.</h2>
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-            <p>
-                Volontaria sera disponible sous <b>Android</b>, <b>iOS</b>
-                et <b>Windows phone</b> ainsi que sur sa
-                <b>plateforme web</b>. Vous pourrez donc vous deplacer
-                librement tout en profitant de votre outil favori.
-            </p>
-        </div>
-    </div>
-
-    <div class="content">
-        <h2 class="content-head is-center">Volontaria vous aide au quotidien.</h2>
-
-        <div class="pure-g">
-            <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-
-                <h3 class="content-subhead">
-                    <i class="fa fa-address-book"></i>
-                    Gestion des bénévoles
-                </h3>
-                <p>
-                    Avec Volontaria vous pouvez facilement gérer
-                    l'inscription des bénévoles et leurs présences
-                    aux évènements.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                <h3 class="content-subhead">
-                    <i class="fa fa-shopping-basket"></i>
-                    Boutique en ligne
-                </h3>
-                <p>
-                    Activer le module de vente en ligne, ajouter vos
-                    articles, classer les par catégories et obtenez
-                    une boutique en ligne.
-                </p>
-            </div>
-            <div class="l-box pure-u-1 pure-u-md-1-3 pure-u-lg-1-3">
-                <h3 class="content-subhead">
-                    <i class="fa fa-globe"></i>
-                    Site internet
-                </h3>
-                <p>
-                    Toutes les organisations ont besoin d'une visibilité
-                    sur internet, pourquoi ne pas faire la vôtre en
-                    seulement quelques clics ?
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="ribbon l-box-lrg pure-g">
-        <h2 class="content-head content-head-ribbon" id="begin-now">Commencer dès maintenant.</h2>
-
-        <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-              <h4 class="content-head content-head-ribbon">Inscrivez vous à la version Bêta.</h4>
-              <p>
-                  Volontaria est actuellement en cours de développement. Si
-                  vous êtes intéressé et souhaitez participer à notre
-                  version Bêta gratuite vous pouvez nous contacter à
-                  <b>rignon.noel@gmail.com</b>.
-              </p>
-              <a href="mailto:rignon.noel@gmail.com" class="pure-button">Demander à participer à la version Bêta</a>
-
-            </div>
-
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4 class="content-head content-head-ribbon">Aidez-nous à ameliorer Volontaria.</h4>
-                <p>
-                    Toutes les contributions sont les bienvenues, que vous soyez développeurs ou non!
-                </p>
-                <ul>
-                    <li>Contactez-nous pour faire partie de nos prochains testeurs.</li>
-                    <li>Contribuez au code source de la plateforme.</li>
-                    <li>Faites valoir vos talents artistiques ou écrit.</li>
-                </ul>
-                <a href="mailto:rignon.noel@gmail.com" class="pure-button">Contacter un développeur</a>
-            </div>
-        </div>
-
-    </div>
-</div>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+	<!-- Camera Slider -->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script> 
+	<script src="js/parallaxie.js"></script>
+	<script src="js/headline.js"></script>
+	<!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/jquery.vide.js"></script>
 
 </body>
 </html>
