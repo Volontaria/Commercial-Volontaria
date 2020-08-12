@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$main-font: 'Pacifico', cursive;
+$main-color: #1D2344;
+$background: #D1D3D9;
+
+.button {
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  color: #2C2C2C;
+  padding: 0 30px;
+  font-weight: 700;
+  border: 1px solid #2C2C2C;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--dark {
+    color: white;
+    background-color: #2C2C2C;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $main-color;
+    border-color: $main-color;
+    color: white;
+  }
+}

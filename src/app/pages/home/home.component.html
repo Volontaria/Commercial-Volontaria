@@ -1,0 +1,78 @@
+<div class="home">
+  <div class="home__header">
+    <div class="home__header__background">
+      <div class="home__header__background__content"></div>
+    </div>
+    <div class="home__header__nav">
+      <div class="home__header__nav__logo" [routerLink]="'/'">
+        Volontaria
+      </div>
+      <button class="home__header__nav__toggle" (click)="toggleNav()">
+        MENU <i class="fa fa-bars"></i>
+      </button>
+      <div class="home__header__nav__items" [ngClass]="{'home__header__nav__items--open': navOpen}">
+        <a class="home__header__nav__items__item" href="#intro">
+          À Propos
+        </a>
+        <a class="home__header__nav__items__item" href="#features">
+          Services
+        </a>
+        <a class="home__header__nav__items__item" href="#services">
+          Fonctionnement
+        </a>
+        <a class="home__header__nav__items__item" href="#price">
+          Gratuit ?
+        </a>
+      </div>
+      <button class="home__header__nav__close" (click)="toggleNav()" *ngIf="navOpen">
+        <i class="fa fa-times"></i>
+      </button>
+    </div>
+    <div class="home__header__content">
+      <div class="home__header__content__title">
+        Bienvenue chez Volontaria
+      </div>
+      <div class="home__header__content__subtitle">
+        Une communaute au service du logiciel libre
+      </div>
+      <div class="home__header__content__buttons">
+        <a class="home__header__content__buttons__button button" [routerLink]="'/contact'">Contactez-nous</a>
+        <a class="home__header__content__buttons__button button button--dark" href="#intro">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+  <div  id="intro" class="home__introduction">
+    <div class="home__introduction__content">
+      <div class="home__introduction__content__title">
+        Qu'est-ce que <span class="home__introduction__content__title__important">Volontaria ?</span>
+      </div>
+      <div class="home__introduction__content__slogan">
+        Volontaria est un outil de gestion de bénévolat gratuit et accessible à tous.
+      </div>
+      <div class="home__introduction__content__text">
+        Volontaria a été imaginé, conçu et propulsé par une communauté de bénévole.<br/>
+        Le projet tire sa force de l'expérience de sa communauté ainsi que des longues analyses et discussions
+        faites par cette dernière pour s'adapter aux besoins et aux demandes de tous ses utilisateurs. <br/><br/>
+
+        En décidant de créer un espace Volontaria pour votre organisme, vous ne décidez pas simplement d'utiliser
+        un logiciel. Vous décidez de faire confiance à toute la communauté qui le soutiens et devenez vous-même
+        contributeur.
+      </div>
+    </div>
+    <div class="home__introduction__links">
+      <button class="home__introduction__links__link button" [routerLink]="'/contact'">
+        Contactez-nous
+      </button>
+      <button class="home__introduction__links__link button button--dark">
+        Y contribuer
+      </button>
+    </div>
+  </div>
+  <app-home-features id="features"></app-home-features>
+  <app-home-services id="services"></app-home-services>
+  <app-home-price  id="price"></app-home-price>
+  <!--
+  <app-home-users></app-home-users>
+  -->
+  <app-footer></app-footer>
+</div>

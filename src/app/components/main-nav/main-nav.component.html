@@ -1,0 +1,18 @@
+<div class="main-nav">
+  <div class="main-nav__content">
+    <div class="main-nav__content__logo" [routerLink]="'/'">
+      Volontaria
+    </div>
+    <button class="main-nav__content__toggle" (click)="toggleNav()">
+      MENU <i class="fa fa-bars"></i>
+    </button>
+    <div class="main-nav__content__items" [ngClass]="{'main-nav__content__items--open': navOpen}">
+      <div class="main-nav__content__items__item" [routerLink]="'/'">
+        Accueil
+      </div>
+    </div>
+    <button class="main-nav__content__close" (click)="toggleNav()" *ngIf="navOpen">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+</div>

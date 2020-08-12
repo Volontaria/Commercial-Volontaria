@@ -1,0 +1,238 @@
+@import '../../../assets/scss/theme';
+
+.home {
+  &__header {
+    margin-top: 20px;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+    &__background {
+      z-index: -1;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &__content {
+        background-image: url('../../../assets/images/background-home.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 100vh;
+        filter: blur(4px);
+        transform: scale(1.1);
+      }
+    }
+
+    &__nav {
+      color: white;
+      max-width: 1600px;
+      padding: 0 30px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__logo {
+        font-family: $main-font;
+        font-size: 40px;
+      }
+
+      &__toggle {
+        display: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px 0 10px 20px;
+        color: white;
+        border: 1px solid $main-color;
+        background-color: transparent;
+
+        &:hover {
+          background-color: white;
+          color: $main-color;
+          cursor: pointer;
+        }
+      }
+
+      &__close {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
+        background-color: $main-color;
+
+        &:hover {
+          background-color: white;
+          color: $main-color;
+          cursor: pointer;
+        }
+      }
+
+      &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__item {
+          padding: 10px 20px;
+          border: 2px solid $main-color;
+          color: white;
+          border-radius: 20px;
+          margin-left: 20px;
+          text-decoration: none;
+
+          &:hover {
+            cursor: pointer;
+            background-color: white;
+            color: $main-color;
+          }
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 100%;
+      color: white;
+
+      &__title {
+        font-family: $main-font;
+        font-size: 45px;
+        line-height: 55px;
+      }
+
+      &__subtitle {
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__button {
+          margin: 20px;
+        }
+
+        &__contact {
+          background-color: white;
+          color: #2C2C2C;
+        }
+      }
+    }
+  }
+
+  &__introduction {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+
+    &__content {
+      text-align: center;
+      max-width: 800px;
+
+      &__title {
+        font-size: 30px;
+        line-height: 40px;
+        color: $main-color;
+        margin-bottom: 40px;
+
+        &__important {
+          font-family: $main-font;
+        }
+      }
+
+      &__slogan {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__links {
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .home {
+    &__header {
+      &__nav {
+        &__items {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: $main-color;
+          color: white;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          padding: 10px;
+
+          &--open {
+            display: flex;
+          }
+
+          &__item {
+            margin: 30px 0;
+            padding: 10px;
+            font-size: 20px;
+          }
+        }
+
+        &__toggle {
+          display: block;
+        }
+      }
+    }
+
+    &__introduction {
+      flex-direction: column;
+
+      &__links {
+        margin-top: 50px;
+        flex-direction: row;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    &__introduction {
+      &__links {
+        flex-direction: column;
+
+        &__link {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

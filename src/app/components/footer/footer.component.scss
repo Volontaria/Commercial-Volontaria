@@ -1,0 +1,47 @@
+@import '../../../assets/scss/theme';
+
+.footer {
+  background-color: $main-color;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__logo {
+      font-family: $main-font;
+      font-size: 50px;
+    }
+
+    &__legal {
+      margin-top: 100px;
+
+      &__link {
+        color: white;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__link {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 50px 20px;
+  }
+}
