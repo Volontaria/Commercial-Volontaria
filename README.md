@@ -1,6 +1,8 @@
 # Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+This project is the official website of volontaria.
+
+You can visit the website at [volontaria.org](https://www.volontaria.org)
 
 ## Development server
 
